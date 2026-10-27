@@ -1,0 +1,73 @@
+:root {
+  --primary-orange: #f36f21; /* Màu cam chủ đạo */
+  --primary-orange-hover: #d95e18; /* Màu cam khi rê chuột */
+  --bg-light: #f9fafb; /* Màu nền tổng thể xám cực nhạt, sạch sẽ */
+  --text-dark: #1f2937; /* Màu chữ chính đen xám, dễ đọc */
+  --border-color: #e5e7eb; /* Màu đường viền nhẹ */
+}
+
+/* 1. Tổng thể giao diện */
+body {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Thanh điều hướng (Navbar / Header chung) */
+.navbar,
+.custom-navbar {
+  background-color: #ffffff !important;
+  border-bottom: 2px solid var(--primary-orange);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* 3. Tùy chỉnh tất cả các nút bấm chính (Nút cam) */
+.btn-primary,
+.btn-success {
+  background-color: var(--primary-orange) !important;
+  border-color: var(--primary-orange) !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 8px 16px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+  background-color: var(--primary-orange-hover) !important;
+  border-color: var(--primary-orange-hover) !important;
+}
+
+/* 4. Các khung chứa nội dung (Card / Form đăng nhập, đăng ký, thêm tin) */
+.card,
+.form-container {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+/* 5. Ô nhập liệu (Input / Textarea) */
+.form-control {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.form-control:focus {
+  border-color: var(--primary-orange);
+  box-shadow: 0 0 0 0.2rem rgba(243, 111, 33, 0.15);
+}
+
+/* 6. Bảng dữ liệu (Table cho trang quản lý tin, xem hồ sơ) */
+table.table {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table.table thead {
+  background-color: #fff3ec; /* Nền cam nhạt cho tiêu đề bảng */
+  color: var(--text-dark);
+}
